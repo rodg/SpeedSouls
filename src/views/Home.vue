@@ -19,8 +19,9 @@
           >
             <font-awesome-icon :icon="['fas', 'list']" />Leaderboards
           </router-link>
-	  <a :href="VUE_APP_WIKI" class="btn -primary">
-            <font-awesome-icon :icon="['fas', 'angle-double-right']"/>Future Wiki
+          <a :href="VUE_APP_WIKI" class="btn -primary">
+            <font-awesome-icon :icon="['fas', 'angle-double-right']" />Future
+            Wiki
           </a>
           <router-link
             class="btn -primary"
@@ -39,9 +40,9 @@
       <div class="max-w-screen-md text-center mx-auto">
         <h1 class="text-4xl font-bold text-center py-0">About Us</h1>
         <p class="text-base py-8 text-center">
-            Howdy. We're the DrakeNieR community. You like going fast? Our name
-            ain't Sonic, but we do like our splits blue. Click that there link
-            over yonder and get corralling the leaderboard today!
+          Howdy. We're the DrakeNieR community. You like going fast? Our name
+          ain't Sonic, but we do like our splits blue. Click that there link
+          over yonder and get corralling the leaderboard today!
         </p>
       </div>
     </hero>
@@ -54,12 +55,11 @@
             Join The Community
           </h1>
           <p class="text-center py-8">
-            Join our Discord server where over 1000 members are waiting for
-            you! Ask questions and receive answers from veteran runners, and
-            share your accomplishments and ideas with the community! Note
-            however, that co-op requests and extensive casual discussions do not
-            belong there. Do please choose a different Discord server for those
-            topics.
+            Join our Discord server where over 1000 members are waiting for you!
+            Ask questions and receive answers from veteran runners, and share
+            your accomplishments and ideas with the community! Note however,
+            that co-op requests and extensive casual discussions do not belong
+            there. Do please choose a different Discord server for those topics.
           </p>
 
           <div class="flex flex-row px-2 py-2 justify-center">
@@ -72,7 +72,7 @@
       <div class="max-w-screen-md text-center mx-auto">
         <h1 class="text-4xl font-bold text-center py-0">Patreon</h1>
         <p class="text-base py-8 text-center">
-          The source for this website came from SpeedSouls. They did most of the 
+          The source for this website came from SpeedSouls. They did most of the
           work. If you'd like to support them, a link to their patreon is below.
         </p>
 
@@ -128,7 +128,7 @@ export default {
         'ng_01',
         'ng_02',
         'nr_01',
-        'nr_02',
+        'nr_02'
       ]
     });
 
