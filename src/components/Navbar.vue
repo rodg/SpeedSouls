@@ -42,9 +42,6 @@
           <router-link :to="{ name: 'Games' }">Leaderboards.</router-link>
         </li>
         <li class="menu-item">
-          <a :href="VUE_APP_WIKI">Wiki.</a>
-        </li>
-        <li class="menu-item">
           <router-link :to="{ name: 'Submit' }">Submit a run.</router-link>
         </li>
       </ul>
@@ -62,24 +59,6 @@
             class="hover:text-discord"
           >
             <font-awesome-icon :icon="['fab', 'discord']" size="2x" />
-          </a>
-        </li>
-        <li class="menu-item icon">
-          <a
-            :href="VUE_APP_PATREON"
-            aria-label="Patreon"
-            class="hover:text-patreon"
-          >
-            <font-awesome-icon :icon="['fab', 'patreon']" size="2x" />
-          </a>
-        </li>
-        <li class="menu-item icon">
-          <a
-            :href="VUE_APP_TWITTER"
-            aria-label="Twitter"
-            class="hover:text-twitter"
-          >
-            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
           </a>
         </li>
         <li class="menu-item icon">

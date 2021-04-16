@@ -27,13 +27,13 @@ import { computed } from '@vue/composition-api';
 
 export default {
   metaInfo: {
-    title: 'SpeedSouls',
-    titleTemplate: '%s - SpeedSouls',
+    title: 'DrakeNieR Speedruns',
+    titleTemplate: '%s - DrakeNieR',
     meta: [
       {
         name: 'description',
         content:
-          'SpeedSouls was established in September 2014 as a community hub for people seeking information about speedrunning the various FROMSoftware Souls games. With the availability of Discord about a year later, we have formed a community for everyone interested. Nowadays, SpeedSouls is one of the largest groups focused on speedrunning a single game series.'
+          "Howdy. We're the DrakeNieR community. You like going fast? Our name ain't Sonic, but we do like our splits blue. Click that there link over yonder and get corralling the leaderboard today!"
       }
     ]
   },

@@ -19,10 +19,8 @@
           >
             <font-awesome-icon :icon="['fas', 'list']" />Leaderboards
           </router-link>
-          <a :href="VUE_APP_WIKI" class="btn -primary">
-            <font-awesome-icon
-              :icon="['fas', 'angle-double-right']"
-            />SpeedSouls Wiki
+	  <a :href="VUE_APP_WIKI" class="btn -primary">
+            <font-awesome-icon :icon="['fas', 'angle-double-right']"/>Future Wiki
           </a>
           <router-link
             class="btn -primary"
@@ -41,19 +39,10 @@
       <div class="max-w-screen-md text-center mx-auto">
         <h1 class="text-4xl font-bold text-center py-0">About Us</h1>
         <p class="text-base py-8 text-center">
-          SpeedSouls was established in September 2014 as a community hub for
-          people seeking information about speedrunning the various FROMSoftware
-          Souls games. With the availability of Discord about a year later, we
-          have formed a community for everyone interested. Nowadays, SpeedSouls
-          is one of the largest groups focused on speedrunning a single game
-          series.
+            Howdy. We're the DrakeNieR community. You like going fast? Our name
+            ain't Sonic, but we do like our splits blue. Click that there link
+            over yonder and get corralling the leaderboard today!
         </p>
-
-        <div class="flex flex-row px-2 py-2 justify-center">
-          <a class="btn -primary" :href="`${VUE_APP_WIKI}/SpeedSouls:About`"
-            >Read More</a
-          >
-        </div>
       </div>
     </hero>
     <hero class="hero bg-nord4 text-nord0 dark:bg-nord1 dark:text-nord6">
@@ -65,7 +54,7 @@
             Join The Community
           </h1>
           <p class="text-center py-8">
-            Join our Discord server where nearly 5000 members are waiting for
+            Join our Discord server where over 1000 members are waiting for
             you! Ask questions and receive answers from veteran runners, and
             share your accomplishments and ideas with the community! Note
             however, that co-op requests and extensive casual discussions do not
@@ -83,9 +72,8 @@
       <div class="max-w-screen-md text-center mx-auto">
         <h1 class="text-4xl font-bold text-center py-0">Patreon</h1>
         <p class="text-base py-8 text-center">
-          If you'd like to give back a bit for the upkeep and work put into the
-          site, then feel free to visit our Patreon. Patreon Supporters receive
-          their own special role on our Discord server.
+          The source for this website came from SpeedSouls. They did most of the 
+          work. If you'd like to support them, a link to their patreon is below.
         </p>
 
         <div class="flex flex-row px-2 py-2 justify-center">
@@ -114,7 +102,7 @@ import { computed, reactive, toRefs } from '@vue/composition-api';
 
 export default {
   metaInfo: {
-    title: 'SpeedSouls',
+    title: 'DrakeNieR Speedruns',
     titleTemplate: null
   },
   components: { SiteNotice, Hero, Discord },
@@ -125,13 +113,22 @@ export default {
       VUE_APP_DISCORD,
       VUE_APP_PATREON,
       assets: [
-        'bloodborne',
-        'darksouls',
-        'darksouls2',
-        'darksouls3',
-        'darksoulsremastered',
-        'darksouls2sotfs',
-        'demonssouls'
+        'na-1280',
+        'nier-1280',
+        'replicant-1280',
+        'dod1_01',
+        'dod1_02',
+        'dod1_03',
+        'dod2_01',
+        'dod2_02',
+        'dod3_01',
+        'dod3_02',
+        'na_01',
+        'na_02',
+        'ng_01',
+        'ng_02',
+        'nr_01',
+        'nr_02',
       ]
     });
 
@@ -139,7 +136,7 @@ export default {
     const style = computed(() => {
       const image =
         state.assets[Math.floor(Math.random() * state.assets.length)];
-      const url = require(`@/assets/backgrounds/${image}-1280.jpg`);
+      const url = require(`@/assets/backgrounds/${image}.jpg`);
 
       return {
         '--bg-url': `url(${url})`

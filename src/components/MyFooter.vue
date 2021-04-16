@@ -19,36 +19,6 @@
             <p>Discord</p>
           </a>
         </div>
-        <div class="twitter">
-          <a
-            :href="VUE_APP_TWITTER"
-            class="hover:text-twitter"
-            target="_blank"
-            rel="noopener"
-          >
-            <font-awesome-icon
-              class="mb-2"
-              :icon="['fab', 'twitter']"
-              size="3x"
-            />
-            <p>Twitter</p>
-          </a>
-        </div>
-        <div class="patreon">
-          <a
-            :href="VUE_APP_PATREON"
-            class="hover:text-patreon"
-            target="_blank"
-            rel="noopener"
-          >
-            <font-awesome-icon
-              class="mb-2"
-              :icon="['fab', 'patreon']"
-              size="3x"
-            />
-            <p>Patreon</p>
-          </a>
-        </div>
         <div class="github">
           <a
             :href="VUE_APP_GITHUB"

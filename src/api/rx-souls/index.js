@@ -10,7 +10,7 @@ import CACHE from './cache';
 
 export const BASE_URL = 'https://www.speedrun.com';
 export const API_ENDPOINT = `${BASE_URL}/api/v1`;
-const SERIE = 'souls';
+const SERIE = 'nier_series';
 const RETRY_COUNT = 3;
 
 function SRC(path) {
