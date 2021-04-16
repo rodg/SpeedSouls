@@ -8,7 +8,7 @@ Install dependencies
 ```
 yarn install
 ```
-Download games' backgrounds (only need to do it once)
+Download games' backgrounds (only need to do it once). We don't use this for DrakeNieR's site.
 ```
 node ./scripts/downloadBackgrounds.js
 ```
