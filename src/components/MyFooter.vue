@@ -2,7 +2,7 @@
   <footer class="font-sans shadow-md bg-nord6 dark:bg-nord1 py-5 px-6">
     <div class="container">
       <div
-        class="socials text-nord0 dark:text-nord6 py-12 grid grid-cols-4 gap-4 text-center"
+        class="socials text-nord0 dark:text-nord6 py-3 grid grid-cols-2 gap-4 text-center"
       >
         <div class="discord">
           <a
