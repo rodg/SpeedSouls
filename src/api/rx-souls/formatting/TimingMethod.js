@@ -11,11 +11,13 @@ function toDigits(value, count = 2) {
 function formatTime(value = 0) {
   if (value === 0) return '';
 
-  let hours = Math.floor(value / 3600);
-  value %= 3600;
-  let minutes = Math.floor(value / 60);
-  let seconds = value % 60;
-  let ms = value % 1;
+  value = value * 1000; // use ms instead of s
+  let hours = Math.floor(value / 3600000);
+  value %= 3600000;
+  let minutes = Math.floor(value / 60000);
+  value %= 60000;
+  let seconds = Math.floor(value / 1000);
+  let ms = value % 1000;
 
   let output = '';
 
