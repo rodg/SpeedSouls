@@ -11,6 +11,7 @@ import CACHE from './cache';
 export const BASE_URL = 'https://www.speedrun.com';
 export const API_ENDPOINT = `${BASE_URL}/api/v1`;
 const SERIE = 'nier_series';
+const SERIE_2 = 'drakengard_series';
 const RETRY_COUNT = 3;
 
 function SRC(path) {
@@ -19,8 +20,14 @@ function SRC(path) {
 }
 
 function getSoulsGames() {
+  return forkJoin([getSeriesGames(SERIE), getSeriesGames(SERIE_2)]).pipe(
+    map(data => [].concat(...data))
+  );
+}
+
+function getSeriesGames(series) {
   return SRC(
-    `/series/${SERIE}/games?embed=categories,variables,categories.variables,categories.game`
+    `/series/${series}/games?embed=categories,variables,categories.variables,categories.game`
   ).pipe(map(response => response.data.map(formatGame)));
 }
 
@@ -64,7 +71,7 @@ function getUser(userId) {
 
 function getUserPersonalBests(userId) {
   return SRC(
-    `/users/${userId}/personal-bests?series=${SERIE}&embed=game,category,category.variables,category.game`
+    `/users/${userId}/personal-bests?embed=game,category,category.variables,category.game`
   ).pipe(
     map(response => response.data),
     map(raw => formatPlayerRun(raw))
