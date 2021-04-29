@@ -3,7 +3,7 @@
   <div v-else-if="!games" class="progress h-2 flex flex-row" />
   <div v-else class="flex flex-col justify-center w-full">
     <div
-      class="games grid grid-cols-1 mb-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      class="games grid grid-cols-1 mb-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
     >
       <router-link
         :to="{
